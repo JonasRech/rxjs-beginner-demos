@@ -1,0 +1,13 @@
+image:
+  file: .gitpod.dockerfile
+ports:
+  - port: 4200
+    onOpen: open-browser
+tasks:
+  - init: npm install
+    command: npm run start
+
+vscode:
+  extensions:
+    - VisualStudioExptTeam.vscodeintellicode@1.1.9:osawgVS7+7lo2813SXOJng==
+    - Angular.ng-template@0.901.0:YBOQRthNnMUfqpVxM7goXg==
