@@ -1,0 +1,29 @@
+{
+  "name": "rxjs-beginner-demos",
+  "version": "0.0.1",
+  "description": "rxjs-beginner-demos for presentation purposes",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonasRech/rxjs-beginner-demos.git"
+  },
+  "keywords": [
+    "rxjs",
+    "beginner",
+    "demo",
+    "demos",
+    "download",
+    "free",
+    "presentation",
+    "reactive",
+    "programming"
+  ],
+  "author": "jonas rech (www.jonasrech.io)",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/JonasRech/rxjs-beginner-demos/issues"
+  },
+  "homepage": "https://www.jonasrech.io"
+}
