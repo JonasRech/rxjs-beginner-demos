@@ -105,6 +105,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "rxjs-beginner-demo"
+    }
+  },
+  "defaultProject": "rxjs-beginner-demo",
+  "cli": {
+    "analytics": "15ba6084-73f9-4eba-92d3-05b94bf69ab5"
+  }
 }
