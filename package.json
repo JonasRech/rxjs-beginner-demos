@@ -1,29 +1,35 @@
 {
-  "name": "rxjs-beginner-demos",
-  "version": "0.0.1",
-  "description": "rxjs-beginner-demos for presentation purposes",
-  "main": "index.js",
+  "name": "rxjs-beginner-demo",
+  "version": "0.0.0",
   "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JonasRech/rxjs-beginner-demos.git"
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~10.0.5",
+    "@angular/common": "~10.0.5",
+    "@angular/compiler": "~10.0.5",
+    "@angular/core": "~10.0.5",
+    "@angular/forms": "~10.0.5",
+    "@angular/platform-browser": "~10.0.5",
+    "@angular/platform-browser-dynamic": "~10.0.5",
+    "@angular/router": "~10.0.5",
+    "rxjs": "~6.5.5",
+    "tslib": "^2.0.0",
+    "zone.js": "~0.10.3"
   },
-  "keywords": [
-    "rxjs",
-    "beginner",
-    "demo",
-    "demos",
-    "download",
-    "free",
-    "presentation",
-    "reactive",
-    "programming"
-  ],
-  "author": "jonas rech (www.jonasrech.io)",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/JonasRech/rxjs-beginner-demos/issues"
-  },
-  "homepage": "https://www.jonasrech.io"
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1000.4",
+    "@angular/cli": "~10.0.4",
+    "@angular/compiler-cli": "~10.0.5",
+    "@types/node": "^12.11.1",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "~3.9.5"
+  }
 }
