@@ -1,5 +1,6 @@
 import { Component, OnInit, ɵɵresolveBody } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, fromEvent } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-build-own-observable',
@@ -46,6 +47,12 @@ export class BuildOwnObservableComponent implements OnInit {
     // one format makes it much easier.
 
     // Example of a HOT Observable
+    // excellent post about this topic -> https://medium.com/@benlesh/hot-vs-cold-observables-f8094ed53339
+    const obs$ = fromEvent(document, 'click')
+      .pipe(map((event: any) => ({ clientX: event.clientX, clientY: event.clientY })));
+    // To transform a HOT Observable into a cold, the observable has to becombe the data producer
+    const obs = () => fromEvent(document, 'click')
+      .pipe(map((event: any) => ({ clientX: event.clientX, clientY: event.clientY })));
   }
 
 }
