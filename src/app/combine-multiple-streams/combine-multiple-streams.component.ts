@@ -17,6 +17,8 @@ export class CombineMultipleStreamsComponent implements OnInit, OnDestroy {
 
   private _interval;
   private _documentEvent = (e: MouseEvent) => {
+      // now remove the clickListener of document, otherwise we need to stash the intervals to remove them
+      document.removeEventListener('click', this._documentEvent);
       // this is a stream of clicks, multiple values
       console.log('mouse event', e);
 
@@ -42,8 +44,8 @@ export class CombineMultipleStreamsComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    console.log('this.interval', this._interval);
     clearInterval(this._interval);
-    document.removeEventListener('click', this._documentEvent);
   }
 
 }

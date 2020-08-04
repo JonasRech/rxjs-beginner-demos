@@ -30,7 +30,7 @@ export class StreamsTheRxjsWayComponent implements OnInit, OnDestroy {
     const interval$: Observable<number> = timer(3000, 1000);
 
     // creation of a stream of values
-    this._subscriptionInterval = interval$.subscribe((val: number) => console.log(`stream one: ${val}`));
+    this._subscriptionInterval = interval$.subscribe((val: number) => console.log(`rxjs way - stream one: ${val}`));
 
     // document could be any HTMLElement
     const click$ = fromEvent(document, 'click');

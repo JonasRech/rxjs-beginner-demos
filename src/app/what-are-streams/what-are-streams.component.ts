@@ -4,7 +4,9 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   selector: 'app-what-are-streams',
   template: `
     <p>
-      <span>What are Streams?</span>
+      <span>
+      What are Streams?
+      </span>
       <span [routerLink]="['/combine-multiple-streams']">Next Lesson >></span>
     </p>
   `,
@@ -24,14 +26,13 @@ export class WhatAreStreamsComponent implements OnInit, OnDestroy {
   // Understand, what are streams?
 
   ngOnInit(): void {
-    
     document.addEventListener('click', this._documentEvent);
 
     let counter = 0;
     this._interval = setInterval(() => {
       // this is a stream of interval, multiple values
       counter++;
-      console.log('counter interval', counter);
+      console.log('_counter interval', counter);
     }, 1000);
 
     // similiar to a XHR request, stream of one value

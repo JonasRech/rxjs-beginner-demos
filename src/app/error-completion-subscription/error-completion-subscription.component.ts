@@ -5,7 +5,8 @@ import { interval, Observable, timer, Subscription } from 'rxjs';
   selector: 'app-error-completion-subscription',
   template: `
     <p>
-      error-completion-subscription works!
+      <span>Error, Completion and Subscription</span>
+      <span [routerLink]="['/build-own-observable']">Next Lesson >></span>
     </p>
   `,
   styles: [
@@ -23,7 +24,7 @@ export class ErrorCompletionSubscriptionComponent implements OnInit, OnDestroy {
     // creation of a stream of values
     this._subscriptionInterval = interval$.subscribe(
       // the event stream with values
-      (val: number) => console.log(`stream one: ${val}`),
+      (val: number) => console.log(`error, completion, subscription - stream one: ${val}`),
       // callback of error
       // if error gets fired, completion is never called & vice versa
       (error) => console.log(`error: ${error}`),
