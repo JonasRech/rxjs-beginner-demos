@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
   template: `
     <p>
       <span>Build own Observable<br /><a (click)="fetchItBaby()">Do the fetch</a></span>
-      <span [routerLink]="['/build-own-observable']">Next Lesson >></span>
+      <span [routerLink]="['/map-operator']">Next Lesson >></span>
     </p>
   `,
   styles: [
@@ -32,7 +32,7 @@ export class BuildOwnObservableComponent implements OnInit {
     // also a example for a COLD observable, nothing is gonna happen until we subscribe to it
     this._http$ = Observable.create(observer => {
       // use the native fetch api
-      fetch('https://jsonplaceholder.typicode.com/todos/1')
+      fetch('https://jsonplaceholder.typicode.com/todos')
         .then(response => response.json())
         .then(body => {
           // there will be no other values, so complete the observable, respect the observable contract (complete or error out)
