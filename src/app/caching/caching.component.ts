@@ -36,6 +36,7 @@ export class CachingComponent implements OnInit {
   }
 
   fetchItBaby() {
+    // convert behaviourSubject to observable, the data producer is the behaviourSubject
     this._cachedTasks$.asObservable().subscribe(
       (tasks) => console.log('tasks', tasks),
       noop,
