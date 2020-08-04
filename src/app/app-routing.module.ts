@@ -9,7 +9,11 @@ const routes: Routes = [
   { path: 'error-completion-subscription', loadChildren: () => import('./error-completion-subscription/error-completion-subscription.module').then(m => m.ErrorCompletionSubscriptionModule) },
   { path: 'build-own-observable', loadChildren: () => import('./build-own-observable/build-own-observable.module').then(m => m.BuildOwnObservableModule) },
   { path: 'map-operator', loadChildren: () => import('./map-operator/map-operator.module').then(m => m.MapOperatorModule) },
-  { path: 'caching', loadChildren: () => import('./caching/caching.module').then(m => m.CachingModule) }
+  { path: 'caching', loadChildren: () => import('./caching/caching.module').then(m => m.CachingModule) },
+  { path: 'imperative-design', loadChildren: () => import('./imperative-design/imperative-design.module').then(m => m.ImperativeDesignModule) },
+  { path: 'reactive-design', loadChildren: () => import('./reactive-design/reactive-design.module').then(m => m.ReactiveDesignModule) },
+  { path: 'misc-stuff', loadChildren: () => import('./misc-stuff/misc-stuff.module').then(m => m.MiscStuffModule) },
+  { path: 'finish', loadChildren: () => import('./finish/finish.module').then(m => m.FinishModule) }
 ];
 
 @NgModule({

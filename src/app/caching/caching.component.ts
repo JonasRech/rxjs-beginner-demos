@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
   template: `
     <p>
       <span>Caching<br /><a (click)="fetchItBaby()">Do the fetch</a></span>
-      <span [routerLink]="['/map-operator']">Next Lesson >></span>
+      <span [routerLink]="['/imperative-design']">Next Lesson >></span>
     </p>
   `,
   styles: [
